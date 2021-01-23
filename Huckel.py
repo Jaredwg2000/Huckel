@@ -20,7 +20,8 @@ def printEvals(Beta):
         rounded.append(round(np.real(evals[i]), 3))
 
     rounded.sort()
-
+    # Create a dictionary with 1 key for each eigenvalue and value equal
+    # to the degeneracy of that eigenvalue
     eigenvalues = {}
     for i in rounded:
         if i in eigenvalues:
